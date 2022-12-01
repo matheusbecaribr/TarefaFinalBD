@@ -143,8 +143,54 @@ INSERT INTO cliente VALUES(NULL, "Deep Purple", "035036503530", "M", "INATIVO", 
 INSERT INTO cliente VALUES(NULL, "Kurt Cobain", "0924914238", "M", "INATIVO", 2);
 INSERT INTO cliente VALUES(NULL, "Jannis Joplin", "23524624", "F", "INATIVO", 3);
 INSERT INTO cliente VALUES(NULL, "Rodolfo Professor", "9235235246", "M", "ATIVO", 1);
-INSERT INTO cliente VALUES(NULL, "Eddie Vedder", "992352634", "M", "ATIVO", 3);
+INSERT INTO cliente VALUES(NULL, "Pedro Vitor Garcia", "992352634", "M", "ATIVO", 3);
 
 /*insert pedidos*/
 
-INSERT INTO pedido VALUES(NULL, 1, 2, "");
+INSERT INTO pedido VALUES(NULL, 1, 1, "11.09.2001", 14615.80);
+INSERT INTO item_pedido VALUES(NULL, 1, 1, 150, 97.97);
+INSERT INTO item_produto VALUES(NULL, 1, 3, 2, 32.90);
+
+INSERT INTO pedido VALUES(NULL, 2, 1, "08.08.2008", 293.67);
+INSERT INTO item_pedido VALUES(NULL, 2, 8, 3, 89.90);
+INSERT INTO item_produto VALUES(NULL, 2, 7, 3, 7.99);
+
+INSERT INTO pedido VALUES(NULL, 3, 1, "30.11.2019", 126.7);
+INSERT INTO item_pedido VALUES(NULL, 3, 21, 1, 33.71);
+INSERT INTO item_produto VALUES(NULL, 3, 22, 1, 92.99);
+
+INSERT INTO pedido VALUES(NULL, 4, 1, "06.10.2020", 42.89);
+INSERT INTO item_pedido VALUES(NULL, 4, 3, 1, 32.90);
+INSERT INTO item_produto VALUES(NULL, 4, 5, 1, 09.99);
+
+INSERT INTO pedido VALUES(NULL, 5, 1, "03.05.0365", 42.89);
+INSERT INTO item_pedido VALUES(NULL, 5, 3, 1, 32.90);
+INSERT INTO item_produto VALUES(NULL, 5, 5, 1, 09.99);
+
+INSERT INTO pedido VALUES(NULL, 6, 1, "06.10.2020", 163.15);
+INSERT INTO item_pedido VALUES(NULL, 6, 14, 1, 85.25);
+INSERT INTO item_produto VALUES(NULL, 6, 10, 1, 77.90);
+
+INSERT INTO pedido VALUES(NULL, 7, 1, "04.10.1970", 51.61);
+INSERT INTO item_pedido VALUES(NULL, 7, 21, 1, 33.71);
+INSERT INTO item_produto VALUES(NULL, 7, 23, 1, 17.90);
+
+INSERT INTO pedido VALUES(NULL, 8, 1, "30.11.2022", 177.16);
+INSERT INTO item_pedido VALUES(NULL, 8, 16, 1, 08.49);
+INSERT INTO item_produto VALUES(NULL, 8, 17, 1, 25.99);
+INSERT INTO item_pedido VALUES(NULL, 8, 18, 1, 97.99);
+INSERT INTO item_produto VALUES(NULL, 8, 19, 1, 32.90);
+INSERT INTO item_pedido VALUES(NULL, 8, 20, 1, 11.79);
+
+INSERT INTO pedido VALUES(NULL, 9, 1, "04.10.1970", 51.61);
+INSERT INTO item_pedido VALUES(NULL, 9, 21, 1, 33.71);
+INSERT INTO item_produto VALUES(NULL, 9, 22, 1, 92.99);
+INSERT INTO item_pedido VALUES(NULL, 9, 17, 1, 25.99);
+INSERT INTO item_produto VALUES(NULL, 9, 19, 1, 32.90);
+
+INSERT INTO pedido VALUES(NULL, 8, 1, "04.10.1970", 51.61);
+INSERT INTO item_pedido VALUES(NULL, 10, 16, 1, 08.49);
+INSERT INTO item_produto VALUES(NULL, 10, 17, 1, 25.99);
+INSERT INTO item_pedido VALUES(NULL, 10, 18, 1, 97.99);
+INSERT INTO item_produto VALUES(NULL, 10, 19, 1, 32.90);
+INSERT INTO item_pedido VALUES(NULL, 10, 20, 1, 11.79);
