@@ -194,3 +194,37 @@ INSERT INTO item_produto VALUES(NULL, 10, 17, 1, 25.99);
 INSERT INTO item_pedido VALUES(NULL, 10, 18, 1, 97.99);
 INSERT INTO item_produto VALUES(NULL, 10, 19, 1, 32.90);
 INSERT INTO item_pedido VALUES(NULL, 10, 20, 1, 11.79);
+
+/*funções*/
+
+SELECT * FROM cliente WHERE status = "ATIVO";
+
+SELECT * FROM cliente WHERE status = "INATIVO";
+
+SELECT * FROM produto WHERE  id_categoria = "2";
+
+SELECT * FROM produto WHERE valor <= "200.00";
+
+SELECT * FROM cliente WHERE sexo = "F";
+
+SELECT * FROM pedido WHERE MONTH (dt_pedido) = MONTH(CURRENT_DATE());
+
+SELECT * FROM pedido WHERE DAY (dt_pedido) = day(CURRENT_DATE());
+
+SELECT SUM(vl_total) FROM pedido WHERE MONTH(dt_pedido) = MONTH(NOW()) AND YEAR(dt_pedido) = YEAR(NOW());
+
+SELECT * FROM item_pedido WHERE id_pedido ='4';
+
+SELECT * FROM pedido WHERE id_cliente ="2";
+
+SELECT v.nome, count(p.id_vendedor) AS quantidade FROM vendedor v INNER JOIN pedido p WHERE p.id_vendedor = v.cd;
+
+SELECT nome FROM produto WHERE qtd < "50";
+
+SELECT nome FROM produto ORDER BY cd;
+
+SELECT AVG(valor) FROM produto;
+
+SELECT min(valor) FROM produto;
+
+SELECT max(valor) FROM produto;
